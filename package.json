@@ -1,0 +1,35 @@
+{
+  "name": "backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "start:dev": "nodemon server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "npx jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.12",
+    "node": "^12.9.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "preset": "@shelf/jest-mongodb"
+  }
+}
